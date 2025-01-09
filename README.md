@@ -1,4 +1,4 @@
-# text-to-image-generator
+
 # Text-to-Image Generator
 
 This repository contains a Python-based text-to-image generation tool that uses the `Stable Diffusion` model. It allows users to generate high-quality images based on textual prompts.
