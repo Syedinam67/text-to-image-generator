@@ -36,15 +36,6 @@ This repository contains a Python-based text-to-image generation tool that uses 
    pip install -r requirements.txt
    ```
 
-3. (Optional) Set up your Hugging Face authentication token:
-   - Create an account on [Hugging Face](https://huggingface.co/).
-   - Obtain your access token.
-   - Set it as an environment variable:
-     ```bash
-     export HUGGINGFACE_AUTH_TOKEN="your_token_here"
-     ```
-
----
 
 ## Usage
 
@@ -57,23 +48,6 @@ The configuration for the generator is defined in the `CFG` class. Key parameter
 - **`image_gen_size`**: Dimensions of the generated image.
 - **`image_gen_guidance_scale`**: Scale for guidance during generation.
 
-### 2. Running the Program
-To generate an image, use the `generate_image` function:
-
-```python
-from your_script_name import generate_image, image_gen_model
-
-prompt = "A sunset on a beach"
-image = generate_image(prompt, image_gen_model)
-image.show()  # Display the image
-```
-
-### 3. Example Output
-Example prompt: "A sunset on a beach"
-
-![Example Output](example-output.png)
-
----
 
 ## How It Works
 1. The `StableDiffusionPipeline` from the `diffusers` library is used to load the Stable Diffusion model.
